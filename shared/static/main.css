@@ -1,0 +1,106 @@
+
+* {
+	box-sizing: border-box ;
+}
+
+body {
+	font-family: monospace ;
+	font-size: 20px ;
+	line-height: 1.4 ;
+}
+
+a {
+	color: red ;
+}
+
+table {
+	border-collapse: collapse ;
+	margin: 2rem 0 ;
+	width: 100% ;
+}
+th,
+td {
+	border-bottom: 1px solid #cccccc ;
+	padding: 0.7rem 1ch ;
+	text-align: left ;
+}
+
+input,
+button {
+	font-family: inherit ;
+	font-size: inherit ;
+	line-height: inherit ;
+}
+
+input {
+	padding: 7px 12px ;
+}
+button {
+	padding: 7px 18px ;
+}
+
+hr {
+	margin: 2rem 0 	;
+}
+
+dl > div {
+	margin: 1rem 0 ;
+}
+dt {
+	font-weight: bold ;
+}
+
+.linear-form {
+	align-items: center ;
+	display: flex ;
+	gap: 10px ;
+}
+
+.form-field {
+	margin: 1.4rem 0 ;
+}
+.form-field label {
+	display: block ;
+	font-weight: bold ;
+	margin: 0 0 3px 0 ;
+}
+.form-field input {
+	display: block ;
+	width: 100% ;
+}
+
+.form-buttons {
+	align-items: center ;
+	display: flex ;
+	gap: 20px ;
+	margin: 2rem 0 ;
+}
+
+.error-message {
+	border-left: 3px solid red ;
+	color: red ;
+	font-weight: bold ;
+	padding: 5px 0px 5px 10px ;
+}
+
+.no-results {
+	font-style: italic ;
+}
+
+.flash {
+	background-color: #d5ffd5 ;
+	border-radius: 3px ;
+	margin: 0 0 2rem 0 ;
+	padding: 1rem ;
+}
+
+footer {
+	color: #999999 ;
+	font-size: 90% ;
+	margin: 3rem 0 1rem 0 ;
+}
+
+.site {
+	margin: 0 auto ;
+	max-width: 1000px ;
+}
