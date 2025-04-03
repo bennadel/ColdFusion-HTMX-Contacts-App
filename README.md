@@ -10,6 +10,7 @@ The code in this ColdFusion application should **not** be considered best practi
 ## Application Iterations
 
 * [v1](./v1/) - the vanilla ColdFusion application.
+* [v2](./v2/) - the initial HTMX version with `hx-boost`.
 
 ## Running With CommandBox
 

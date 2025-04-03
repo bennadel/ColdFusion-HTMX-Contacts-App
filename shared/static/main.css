@@ -99,6 +99,9 @@ footer {
 	font-size: 90% ;
 	margin: 3rem 0 1rem 0 ;
 }
+footer a {
+	color: inherit ;
+}
 
 .site {
 	margin: 0 auto ;
