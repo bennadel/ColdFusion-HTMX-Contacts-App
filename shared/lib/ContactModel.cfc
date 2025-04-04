@@ -118,6 +118,7 @@ component {
 
 		create( "Emily Thomas",    "555-1111",  "emily.thomas@example.com" );
 		create( "David Mitchell",  "555-2222",  "david.mitchell@example.com" );
+		create( "Diva Jones",      "555-3333",  "diva.jones@example.com" );
 		create( "Dylan Lee",       "555-3333",  "dylan.lee@example.com" );
 		create( "Riley Smith",     "555-4444",  "riley.smith@example.com" );
 		create( "Joseph Jackson",  "555-5555",  "joseph.jackson@example.com" );

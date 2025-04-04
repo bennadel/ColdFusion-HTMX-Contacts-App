@@ -11,6 +11,17 @@
 
 		try {
 
+			// This is a test to see how the workflow responds to error messages.
+			// Otherwise, we don't have a good way to trigger an error in this workflow.
+			if ( contact.name.reFindNoCase( "^Diva\b" ) ) {
+
+				throw(
+					type = "Model.Validation",
+					message = "Contacts with the name Diva cannot be deleted."
+				);
+
+			}
+
 			contactModel.deleteByFilter( id = contact.id );
 
 			goto( "index.cfm?flash=contact.deleted" );

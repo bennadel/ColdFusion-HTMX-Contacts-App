@@ -1,13 +1,13 @@
 <cfscript>
 
 	param name="url.id" type="numeric";
-	param name="form.submitted" type="boolean" default=false;
+	param name="url.submitted" type="boolean" default=false;
 
 	contact = contactModel.get( val( url.id ) );
 	title = "Delete #contact.name#";
 	errorMessage = "";
 
-	if ( form.submitted ) {
+	if ( isHttpDelete() && url.submitted ) {
 
 		try {
 
@@ -48,18 +48,18 @@
 
 	<cfinclude template="_errorMessage.cfm">
 
-	<form method="post" action="delete.cfm?id=#encodeForUrl( contact.id )#">
-		<input type="hidden" name="submitted" value="true" />
-
-		<p class="form-buttons">
-			<button type="submit">
-				Delete
-			</button>
-			<a href="view.cfm?id=#encodeForUrl( contact.id )#">
-				Cancel
-			</a>
-		</p>
-	</form>
+	<p class="form-buttons">
+		<button
+			hx-delete="delete.cfm?id=#encodeForUrl( contact.id )#&submitted=true"
+			hx-target="body"
+			hx-push-url="true"
+			type="button">
+			Delete
+		</button>
+		<a href="view.cfm?id=#encodeForUrl( contact.id )#">
+			Cancel
+		</a>
+	</p>
 
 </cfoutput>
 </cfsavecontent>

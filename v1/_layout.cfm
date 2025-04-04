@@ -43,6 +43,8 @@
 				</p>
 				<p>
 					<a href="/">Back to root</a>
+					|
+					<a href="index.cfm?clear=1">Clear data</a>
 				</p>
 			</footer>
 

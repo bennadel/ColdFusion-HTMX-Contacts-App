@@ -11,6 +11,7 @@ The code in this ColdFusion application should **not** be considered best practi
 
 * [v1](./v1/) - the vanilla ColdFusion application.
 * [v2](./v2/) - the initial HTMX version with `hx-boost`.
+* [v3](./v3/) - adds `hx-delete` to the delete button.
 
 ## Running With CommandBox
 
