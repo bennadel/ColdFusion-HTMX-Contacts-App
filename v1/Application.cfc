@@ -1,7 +1,13 @@
 component {
 
 	// Define the application settings.
-	this.name = "HtmxContactsAppV1";
+	// --
+	// Note: Since we're not caching anything in the application scope (contact data is
+	// cached in the server scope), we're going to use the same application name for each
+	// version. This way, we're not creating new memory spaces for each iteration. The
+	// Application.cfc is still instantiated on every request; and, any version-specific
+	// settings should still apply to the correct version of the app.
+	this.name = "HtmxContactsApp";
 	this.applicationTimeout = createTimeSpan( 1, 0, 0, 0 );
 	this.sessionManagement = false;
 	this.setClientCookies = false;
