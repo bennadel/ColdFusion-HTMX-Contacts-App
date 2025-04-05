@@ -12,7 +12,7 @@ The code in this ColdFusion application should **not** be considered best practi
 * [v1](./v1/) - the vanilla ColdFusion application.
 * [v2](./v2/) - the initial HTMX version with `hx-boost`.
 * [v3](./v3/) - adds `hx-delete` to the delete button.
-* [v4](./v4/) - adds realtime email validation.
+* [v4](./v4/) - adds `hx-get` realtime email validation.
 
 ## Running With CommandBox
 
