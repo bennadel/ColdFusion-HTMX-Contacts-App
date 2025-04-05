@@ -27,33 +27,6 @@ component {
 	// ---
 
 	/**
-	* I test to see if the given email is already in use and throw an error if so. 
-	*/
-	public void function assertEmailIsAvailable(
-		required string email,
-		numeric excludingId = 0
-		) {
-
-		var existing = getByFilter( email = email );
-
-		if ( ! existing.len() ) {
-
-			return;
-
-		}
-
-		if ( existing.first().id == excludingId ) {
-
-			return;
-
-		}
-
-		validation.throwConflict();
-
-	}
-
-
-	/**
 	* I create a new model.
 	*/
 	public numeric function create(
@@ -241,6 +214,33 @@ component {
 	// ---
 	// PRIVATE METHODS.
 	// ---
+
+	/**
+	* I test to see if the given email is already in use and throw an error if so.
+	*/
+	private void function assertEmailIsAvailable(
+		required string email,
+		numeric excludingId = 0
+		) {
+
+		var existing = getByFilter( email = email );
+
+		if ( ! existing.len() ) {
+
+			return;
+
+		}
+
+		if ( existing.first().id == excludingId ) {
+
+			return;
+
+		}
+
+		validation.throwConflict();
+
+	}
+
 
 	/**
 	* I return the next ID to use during model creation.

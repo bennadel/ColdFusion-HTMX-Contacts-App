@@ -83,6 +83,15 @@ dt {
 	padding: 5px 0px 5px 10px ;
 }
 
+.inline-error {
+	color: red ;
+	font-size: 80% ;
+}
+.inline-error:has(*) {
+	display: block ;
+	margin-top: 0.5rem ;
+}
+
 .no-results {
 	font-style: italic ;
 }

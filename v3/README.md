@@ -33,4 +33,4 @@ Long story short, this is not a real value-add feature of the HTMX framework for
 See [relevant chapter in Hypermedia Systems][hypermedia-chapter]. It's the section labeled, "A Second Step: Deleting Contacts With HTTP DELETE".
 
 
-[hypermedia-chapter]: https://hypermedia.systems/htmx-patterns/
+[hypermedia-chapter]: https://hypermedia.systems/htmx-patterns/#_a_second_step_deleting_contacts_with_http_delete
