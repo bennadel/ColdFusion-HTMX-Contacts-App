@@ -176,6 +176,51 @@ component {
 
 
 	/**
+	* I get the page of models that match the given keyword search.
+	*
+	* Note: This pagination method was created a separate method from the one above
+	* because it was added in a later application iteration and I don't want to break the
+	* earlier versions of the application.
+	*/
+	public struct function getBySearchPagination(
+		required string keywords,
+		numeric page = 1,
+		numeric pageSize = 5
+		) {
+
+		page = max( fix( page ), 1 );
+		pageSize = min( max( fix( pageSize ), 1 ), 50 );
+
+		var results = getBySearch( keywords );
+		var offset = ( ( ( page - 1 ) * pageSize ) + 1 );
+
+		// If we've gone beyond the bounds of the results, return the null-set.
+		if ( offset > results.len() ) {
+
+			return {
+				results: [],
+				page: page,
+				pageSize: pageSize,
+				hasPrevious: false,
+				hasNext: false
+			};
+
+		}
+
+		var length = min( pageSize, ( results.len() - offset + 1 ) );
+
+		return {
+			results: results.slice( offset, length ),
+			page: page,
+			pageSize: pageSize,
+			hasPrevious: ( page > 1 ),
+			hasNext: ( length == pageSize )
+		};
+
+	}
+
+
+	/**
 	* I update the model with the given identifier.
 	*/
 	public void function update(

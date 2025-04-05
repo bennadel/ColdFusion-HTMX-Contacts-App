@@ -56,6 +56,19 @@ dt {
 	gap: 10px ;
 }
 
+.pagination {
+	display: flex ;
+	gap: 20px ;
+	justify-content: flex-end ;
+	margin-left: auto ;
+}
+.pagination a {
+	text-decoration: none ;
+}
+.pagination a u {
+	text-decoration: underline ;
+}
+
 .form-field {
 	margin: 1.4rem 0 ;
 }
