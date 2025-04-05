@@ -129,3 +129,8 @@ footer a {
 	margin: 0 auto ;
 	max-width: 1000px ;
 }
+
+.load-more {
+	display: block ;
+	margin: 0 auto ;
+}

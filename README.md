@@ -14,6 +14,7 @@ The code in this ColdFusion application should **not** be considered best practi
 * [v3](./v3/) - adds `hx-delete` to the delete button.
 * [v4](./v4/) - adds `hx-get` realtime email validation.
 * [v5](./v5/) - adds pagination to contacts list.
+* [v6](./v6/) - adds a "load more" button to the contacts list.
 
 ## Running With CommandBox
 
