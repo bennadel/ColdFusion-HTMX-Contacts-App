@@ -16,6 +16,7 @@ The code in this ColdFusion application should **not** be considered best practi
 * [v5](./v5/) - adds pagination to contacts list.
 * [v6](./v6/) - adds a "load more" button to the contacts list.
 * [v7](./v7/) - adds infinite scrolling.
+* [v8](./v8/) - adds realtime search.
 
 ## Running With CommandBox
 
