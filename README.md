@@ -15,6 +15,7 @@ The code in this ColdFusion application should **not** be considered best practi
 * [v4](./v4/) - adds `hx-get` realtime email validation.
 * [v5](./v5/) - adds pagination to contacts list.
 * [v6](./v6/) - adds a "load more" button to the contacts list.
+* [v7](./v7/) - adds infinite scrolling.
 
 ## Running With CommandBox
 
