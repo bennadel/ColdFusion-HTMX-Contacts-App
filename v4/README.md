@@ -32,6 +32,8 @@ In the book, they use the `change` event within the `hx-trigger` attribute. But,
 
 I've opened a [discussion on the GitHub forum][gh-discussion] to ask about this `input` vs. `change` event selection. I've seen this pattern (using the `change` event) used in more than just this book, even for realtime validation. As such, I wonder if there's some mechanics that I'm just not understanding at this time.
 
+> **Update**: In the GitHub discussion, I was told that using the `input` is fine; and that the `input` event is being used more frequently in the HTMX documentation now.
+
 On the **add** contact page, the URL doesn't include a contact ID since we're adding a new contact. However, on the **edit** page, I'm including the current contact ID in the `hx-get` attribute so that I can ignore email conflicts on the given record:
 
 * Add: `hx-get="validateEmail.cfm"`
