@@ -63,16 +63,7 @@
 				<p>
 					Rendered #timeFormat( now(), "hh:mm:ss" )#
 					&mdash;
-					v2 of this demo app includes the HTMX library and applies hx-boost to the body.
-				</p>
-				<p>
-					<!---
-						Don't boost the navigation to root directory. We are a leaving
-						the application experience.
-					--->
-					<a href="/" hx-boost="false">Back to root</a>
-					|
-					<a href="index.cfm?clear=1">Clear data</a>
+					ColdFusion + HTMX Demo App
 				</p>
 			</footer>
 

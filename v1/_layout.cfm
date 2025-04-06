@@ -39,12 +39,7 @@
 				<p>
 					Rendered #timeFormat( now(), "hh:mm:ss" )#
 					&mdash;
-					v1 of this demo app is just a vanilla ColdFusion app that performs full page refreshes on every action.
-				</p>
-				<p>
-					<a href="/">Back to root</a>
-					|
-					<a href="index.cfm?clear=1">Clear data</a>
+					ColdFusion + HTMX Demo App
 				</p>
 			</footer>
 

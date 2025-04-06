@@ -37,13 +37,6 @@ component {
 
 		var contactModel = new shared.lib.ContactModel();
 
-		// Check for model reset.
-		if ( url?.clear == 1 ) {
-
-			contactModel.deleteByFilter();
-
-		}
-
 		// Note: since we're pulling the requested script into the Application.cfc
 		// context, the function-local variables and the mix-in methods are now available
 		// in the requested template execution.

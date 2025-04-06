@@ -11,6 +11,9 @@
 
 	<p class="flash">
 		<cfswitch expression="#url.flash#">
+			<cfcase value="contact.cleared">
+				Your contact demo data has been cleared.
+			</cfcase>
 			<cfcase value="contact.created">
 				Your contact has been created.
 			</cfcase>

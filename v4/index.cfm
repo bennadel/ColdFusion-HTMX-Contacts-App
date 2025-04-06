@@ -11,8 +11,18 @@
 <cfoutput>
 
 	<h1>
-		Contacts App (HTMX + ColdFusion)
+		Contacts App
 	</h1>
+
+	<nav>
+		<a href="add.cfm">Add contact</a> |
+		<a href="generate.cfm">Generate data</a> |
+		<a href="clear.cfm">Clear data</a> |
+		<!--- Don't boost the navigation back to the root directory. --->
+		<a href="/" hx-boost="false">Back to root</a>
+	</nav>
+
+	<hr />
 
 	<form method="get" class="linear-form">
 		<label for="search">
@@ -89,10 +99,6 @@
 		</cfif>
 
 	</cfif>
-
-	<p>
-		<a href="add.cfm">Add contact</a>
-	</p>
 
 </cfoutput>
 </cfsavecontent>
