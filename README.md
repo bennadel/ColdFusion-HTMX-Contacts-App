@@ -17,6 +17,7 @@ The code in this ColdFusion application should **not** be considered best practi
 * [v6](./v6/) - adds a "load more" button to the contacts list.
 * [v7](./v7/) - adds infinite scrolling.
 * [v8](./v8/) - adds realtime search.
+* [v9](./v9/) - adds `request.htmx` struct based on HTTP headers.
 
 ## Running With CommandBox
 
