@@ -18,6 +18,7 @@ The code in this ColdFusion application should **not** be considered best practi
 * [v7](./v7/) - adds infinite scrolling.
 * [v8](./v8/) - adds realtime search.
 * [v9](./v9/) - adds `request.htmx` struct based on HTTP headers.
+* [v10](./v10/) - adds a loading indicator during search.
 
 ## Running With CommandBox
 
