@@ -48,7 +48,7 @@
 
 		</script>
 	</head>
-	<body hx-boost="true">
+	<body hx-boost="true" hx-sync="this:replace">
 
 		<div class="site">
 

@@ -8,7 +8,7 @@
 	// down any page that has a query string search.
 	if ( url.q.len() ) {
 
-		sleep( 10000 );
+		sleep( 5000 );
 
 	}
 
@@ -39,7 +39,7 @@
 
 	<hr />
 
-	<form method="get" hx-sync="this:replace" class="linear-form">
+	<form method="get" class="linear-form">
 		<label for="search">
 			Search contacts:
 		</label>
@@ -56,22 +56,13 @@
 			hx-select=".search-results"
 			hx-select-oob="pagination"
 
-			hx-on:htmx:before-cleanup-element="
-				console.log(this['htmx-internal-data'].xhr);
-				console.log(this.form['htmx-internal-data'].xhr);
-				console.log(document.body['htmx-internal-data'].xhr);
-				htmx.trigger(this, 'htmx:abort');
-				htmx.trigger('##search', 'htmx:abort');
-				htmx.trigger('form', 'htmx:abort');
-			"
-
-			hx-indicator="##search-busy"
+			hx-indicator=".htmx-indicator"
 		/>
 		<button type="submit">
 			Search
 		</button>
 
-		<span id="search-busy" class="htmx-indicator">
+		<span class="htmx-indicator">
 			Loading....
 		</span>
 
