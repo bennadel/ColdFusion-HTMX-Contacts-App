@@ -19,6 +19,7 @@ The code in this ColdFusion application should **not** be considered best practi
 * [v8](./v8/) - adds realtime search.
 * [v9](./v9/) - adds `request.htmx` struct based on HTTP headers.
 * [v10](./v10/) - adds a loading indicator during search.
+* [v11](./v11/) - adds button disabling during form submission.
 
 ## Running With CommandBox
 
