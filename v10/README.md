@@ -53,7 +53,13 @@ By adding `hx-sync="this:replace"` to the body tag, it's inherited by the entire
 
 Of course, you can always override this inherited `hx-sync` behavior by adding an `hx-sync` attribute lower down in the DOM tree if there's an area of interactions that you want to manage explicitly.
 
+> **Aside**: I opened a [discussion about `htmx:abort`][gh-issue] over on GitHub and [Vincent/@telroshan][telroshan] had some great feedback about why the `hx-sync` default behavior was in place (such as debouncing double-clicks); and also pointed out some of the trade-offs in synchronizing requests on the root. I think for the time being, I want to keep the synchronizing on the root (since this is closer to the normal behavior of the browser). But this definitely gave me a lot to think about. There are no "obviously right" solutions.
+
 See [relevant chapter in Hypermedia Systems][hypermedia-chapter]. It's the section labeled, "Adding A Request Indicator".
 
 
+[gh-issue]: https://github.com/bigskysoftware/htmx/discussions/3269
+
 [hypermedia-chapter]: https://hypermedia.systems/more-htmx-patterns/#_adding_an_indicator
+
+[telroshan]: https://github.com/Telroshan
