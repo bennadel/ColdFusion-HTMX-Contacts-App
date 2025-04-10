@@ -19,6 +19,13 @@
 
 	<h1>
 		Contacts App
+
+		<span
+			hx-sync="this"
+			hx-get="index.count.cfm"
+			hx-trigger="load">
+			<!--- Lazy load the contacts length. --->
+		</span>
 	</h1>
 
 	<nav>
@@ -58,17 +65,30 @@
 			Loading....
 		</span>
 
-		<div id="pagination" class="pagination">
+		<div
+			id="pagination"
+			class="pagination"
+
+			hx-push-url="true"
+			hx-swap="show:window:top"
+			hx-target=".search-results"
+			hx-select=".search-results"
+			hx-select-oob="pagination">
+
 			<cfif pagination.hasPrevious>
 				<a href="index.cfm?q=#encodeForUrl( url.q )#&page=#( pagination.page - 1 )#&pageSize=#( pagination.pageSize )#">
 					&larr; <u>Prev</u>
 				</a>
+			<cfelse>
+				&larr; Prev
 			</cfif>
 
 			<cfif pagination.hasNext>
 				<a href="index.cfm?q=#encodeForUrl( url.q )#&page=#( pagination.page + 1 )#&pageSize=#( pagination.pageSize )#">
 					<u>Next</u> &rarr;
 				</a>
+			<cfelse>
+				Next &rarr;
 			</cfif>
 		</div>
 	</form>

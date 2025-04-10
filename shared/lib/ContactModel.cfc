@@ -194,7 +194,7 @@ component {
 			page: page,
 			pageSize: pageSize,
 			hasPrevious: ( page > 1 ),
-			hasNext: ( length == pageSize )
+			hasNext: ( ( offset + length ) < results.len() )
 		};
 
 	}

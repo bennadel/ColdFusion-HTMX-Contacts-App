@@ -60,6 +60,11 @@ dt {
 	font-weight: bold ;
 }
 
+h1 span {
+	color: #999999 ;
+	font-weight: normal ;
+}
+
 .linear-form {
 	align-items: center ;
 	display: flex ;
@@ -67,10 +72,12 @@ dt {
 }
 
 .pagination {
+	color: #999999 ;
 	display: flex ;
 	gap: 20px ;
 	justify-content: flex-end ;
 	margin-left: auto ;
+	user-select: none ;
 }
 .pagination a {
 	text-decoration: none ;
