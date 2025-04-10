@@ -57,12 +57,16 @@
 				<a href="index.cfm?q=#encodeForUrl( url.q )#&page=#( pagination.page - 1 )#&pageSize=#( pagination.pageSize )#">
 					&larr; <u>Prev</u>
 				</a>
+			<cfelse>
+				&larr; Prev
 			</cfif>
 
 			<cfif pagination.hasNext>
 				<a href="index.cfm?q=#encodeForUrl( url.q )#&page=#( pagination.page + 1 )#&pageSize=#( pagination.pageSize )#">
 					<u>Next</u> &rarr;
 				</a>
+			<cfelse>
+				Next &rarr;
 			</cfif>
 		</div>
 	</form>
