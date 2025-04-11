@@ -25,6 +25,7 @@
 			hx-get="index.count.cfm"
 			hx-trigger="load">
 			<!--- Lazy load the contacts length. --->
+			(loading count...)
 		</span>
 	</h1>
 
