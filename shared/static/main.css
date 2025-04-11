@@ -151,3 +151,25 @@ footer a {
 	display: block ;
 	margin: 0 auto ;
 }
+
+.link-button {
+	background-color: transparent ;
+	border-width: 0 ;
+	color: red ;
+	cursor: pointer ;
+	display: inline ;
+	font-size: inherit ;
+	font-style: inherit ;
+	font-weight: inherit ;
+	line-height: inherit ;
+	margin: 0 ;
+	padding: 0 ;
+	text-decoration: underline ;
+}
+
+.deleted-row {
+	background-color: #e0e0e0 ;
+	opacity: 0.3 ;
+	pointer-events: none ;
+	user-select: none ;
+}

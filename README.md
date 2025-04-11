@@ -22,6 +22,7 @@ The code in this ColdFusion application should **not** be considered best practi
 * [v11](./v11/) - adds button disabling during form submission.
 * [v12](./v12/) - adds lazy-loaded contact count.
 * [v13](./v13/) - refactor search layout to use "focus scroll" behavior.
+* [v14](./v14/) - adds a delete button to the contacts list.
 
 ## Running With CommandBox
 
