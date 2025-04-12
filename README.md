@@ -24,6 +24,7 @@ The code in this ColdFusion application should **not** be considered best practi
 * [v13](./v13/) - refactor search layout to use "focus scroll" behavior.
 * [v14](./v14/) - adds a delete button to the contacts list.
 * [v15](./v15/) - adds bulk delete.
+* [v16](./v16/) - adds a download feature.
 
 ## Running With CommandBox
 

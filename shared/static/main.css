@@ -173,3 +173,7 @@ footer a {
 	pointer-events: none ;
 	user-select: none ;
 }
+
+.downloader {
+	margin: 2rem 0 ;
+}
