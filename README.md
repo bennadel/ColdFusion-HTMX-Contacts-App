@@ -23,6 +23,7 @@ The code in this ColdFusion application should **not** be considered best practi
 * [v12](./v12/) - adds lazy-loaded contact count.
 * [v13](./v13/) - refactor search layout to use "focus scroll" behavior.
 * [v14](./v14/) - adds a delete button to the contacts list.
+* [v15](./v15/) - adds bulk delete.
 
 ## Running With CommandBox
 
