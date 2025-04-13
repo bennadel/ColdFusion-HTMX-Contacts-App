@@ -20,7 +20,7 @@ When the user clicks the "Download" link, HTMX will "boost" the request; but, in
 
 The `download.cfm` page then executes a polling operation, making repeated requests until a randomly selected duration has passed. As I mentioned above, there is no actual generation that's happening. As such, this is all theater.
 
-That said, the download page uses the same kind of containment mechanism as above so that the same content will continue to be swapped locally even if the download link it opened in a new tab (ie, the download page uses the same mechanics).
+That said, the download page uses the same kind of containment mechanism as above so that the same content will continue to be swapped locally even if the download link is opened in a new tab (ie, the download page uses the same mechanics).
 
 The following was the lightest-weight way to perform this simulation - this is not an example of any best practices. I'm reproducing this file in full down below since I am too tired to explain it in any mediated way:
 

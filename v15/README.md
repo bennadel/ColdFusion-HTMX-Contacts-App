@@ -44,7 +44,7 @@ Instead, I put the `form` at the bottom of the page, and allowed the `form="bulk
 
 Again, I'm diverging from the book slightly. In the book, the authors are using an `hx-delete` attribute on the submit button itself (and then targeting the `body` tag). But, to me, it seemed easier to just navigate to the `index.deleteMany.cfm` file, perform the delete, and then redirect back to the index page.
 
-My approach incurs an addition request to the server; but, my approach also feels less "clever", which I always appreciate. Plus, by redirecting to a separate page, it gives me a clear place to render an error message should I ever need to (not that I am in this implementation).
+My approach incurs an additional request to the server; but, my approach also feels less "clever", which I always appreciate. Plus, by redirecting to a separate page, it gives me a clear place to render an error message should I ever need to (not that I am in this implementation).
 
 Ultimately, I'm taking the user to the following deletion page, where I perform the multi-contact delete, and then redirect the user back to the search page. To help the user maintain context in the pagination, I'm passing through the search parameters; and then using them in the redirection as well. This way, if you multi-delete contacts on the 3rd search results page, I bring you back to the 3rd search results page:
 

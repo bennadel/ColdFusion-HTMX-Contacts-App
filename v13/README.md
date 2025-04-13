@@ -64,5 +64,7 @@ Again, we're using the `hx-target` and `hx-select` to brute-force swap the entir
 
 I think this is going to make some of the more dynamic interactions a lot easier if I don't have to worry about input focus (as long as the input has a consistent `id` on it). This seems like a really handy behavior - I'm surprised it isn't more front-and-center in the public discourse. Hopefully I'm not missing something obvious.
 
+> **Aside**: Note that the `value` of the focused input still gets updated based on the server response. So, even though the focus is being maintained across the `hx-swap`, it's possible that the input value will suddenly change out from under the user.
+
 
 [focus-scroll]: https://htmx.org/attributes/hx-swap/#focus-scroll
